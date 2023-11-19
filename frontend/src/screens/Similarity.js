@@ -26,7 +26,7 @@ function Similarity() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ text: inputValue }),
+      body: JSON.stringify({ text1: inputValue, text2: inputValue2 }),
     });
 
     try {
