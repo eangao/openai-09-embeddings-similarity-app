@@ -20,7 +20,7 @@ app.post("/api/similarity", async (req, res) => {
     //similarity
     const similarity = cosineSimilarity(embedding1, embedding2);
 
-    res.json({ embedding1, embedding2, similarity });
+    res.json({ similarity, embedding1, embedding2 });
 
     // Return the completion as a JSON response
     // res.json({ data: completion.data });
